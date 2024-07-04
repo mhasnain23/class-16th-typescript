@@ -74,6 +74,7 @@ var GiaicAtm = /** @class */ (function () {
         this.name = name;
         this.pin = pin;
         this.balance = balance;
+        this.isLogin = false;
     }
     GiaicAtm.prototype.Login = function () {
         if (this.name === "Ubaid" || this.pin === 1234) {
@@ -105,5 +106,5 @@ var GiaicAtm = /** @class */ (function () {
 }());
 var UbaidTransac = new GiaicAtm("Ubaid", 1234, 20000);
 UbaidTransac.Login();
-UbaidTransac.withdrawl(1000);
+UbaidTransac.withdrawl(15000);
 console.log(UbaidTransac);

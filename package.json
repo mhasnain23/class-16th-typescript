@@ -1,6 +1,7 @@
 {
   "name": "17-class",
   "version": "1.0.0",
+  "type":"module",
   "description": "constructor never return\r #",
   "main": "main.js",
   "scripts": {

@@ -109,7 +109,7 @@ class GiaicAtm {
         this.name = name;
         this.pin = pin;
         this.balance = balance;
-
+        this.isLogin = false;
     }
     Login(): void {
         if (this.name === "Ubaid" || this.pin === 1234) {
@@ -143,9 +143,6 @@ class GiaicAtm {
 
 let UbaidTransac: GiaicAtm = new GiaicAtm("Ubaid", 1234, 20000)
 UbaidTransac.Login()
-UbaidTransac.withdrawl(1000)
-
+UbaidTransac.withdrawl(15000)
 
 console.log(UbaidTransac);
-
-
